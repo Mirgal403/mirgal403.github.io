@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Contact — Mirgal Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1 class="logo">Mirga</h1>
+			<nav class="nav" aria-label="Hoofdmenu">
+				<button id="menuToggle" class="menu-toggle" aria-expanded="false">Menu</button>
+				<ul id="navList" class="nav-list">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">Over mij</a></li>
+					<li><a href="projects.html">Projecten</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="container card">
+			<h2>Contact</h2>
+			<form id="contactForm" action="#" onsubmit="return false;">
+				<label>
+					<span>Naam</span>
+					<input name="name" type="text" placeholder="Je naam">
+				</label>
+				<label>
+					<span>Email</span>
+					<input name="email" type="email" placeholder="naam@voorbeeld.com">
+				</label>
+				<label>
+					<span>Bericht</span>
+					<textarea name="message" rows="4" placeholder="Typ je bericht..."></textarea>
+				</label>
+				<button class="btn" type="submit">Verstuur</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> Mirga — Portfolio</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
